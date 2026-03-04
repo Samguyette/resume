@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} -- \small#3 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sam Guyette} \\ \vspace{1pt}
+    \small (310) 403-2814 $|$ \href{mailto:samguyette@gmail.com}{\underline{samguyette@gmail.com}} $|$
+    \href{https://www.samguyette.com}{\underline{www.samguyette.com}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cash App (Block)}{Jan 2025 -- Mar 2025}
+      {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Developed point-of-sale financing solutions for major financial institutions, including Capital One, Guaranteed Rate, and Barclays as part of the Partner Implementation Team.}
+        \resumeItem{Implemented risk assessment modules for digital identity, income verification, bank account validation, and employment checks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {System1}{Aug 2025 -- Dec 2025}
+      {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Developed point-of-sale financing solutions for major financial institutions, including Capital One, Guaranteed Rate, and Barclays as part of the Partner Implementation Team.}
+        \resumeItem{Implemented risk assessment modules for digital identity, income verification, bank account validation, and employment checks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{Aug 2022 -- Mar 2025}
+      {Software Development Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Designed, built, and maintained systems to protect Amazon's worldwide businesses from payment-related fraud, misuse, and abuse. These systems serve 25,000 transactions per second, while ensuring high availability, throughput, and low latency.}
+        \resumeItem{Led the integration of the Discover payment network into Amazon's internal chargeback workflow, automating over 500 daily manual investigations, improving operational efficiency.}
+        \resumeItem{Designed and implemented a monitoring application for entry gate metrics at Amazon Go and Whole Foods stores, delivering real-time alerts to machine learning scientists. The system identifies unintended abnormalities caused by fraud model changes, such as major customer blockages, enabling fast rollbacks within minutes instead of hours.}
+        \resumeItem{Led Prime Day preparation for a critical microservice essential for processing Amazon.com orders. This involved calculating host requirements, setting throttling limits, running stress and chaos tests, and monitoring performance metrics to guarantee service availability during high traffic periods.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amount}{Apr 2021 -- Aug 2022}
+      {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Developed point-of-sale financing solutions for major financial institutions, including Capital One, Guaranteed Rate, and Barclays as part of the Partner Implementation Team.}
+        \resumeItem{Implemented risk assessment modules for digital identity, income verification, bank account validation, and employment checks.}
+        \resumeItem{Collaborated with product managers and banking partners to define and refine project requirements, ensuring timely and successful deliveries.}
+        \resumeItem{Refactored core platform code to adopt modern design patterns, improving scalability to support an expanding portfolio of banking partners.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Epson}{Jun 2018 -- Sep 2018, Jun 2019 -- Sep 2019}
+      {Software Engineer Intern}{}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented automated market monitoring tools that scraped third-party resellers to ensure compliance.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {Bachelor of Science, Computer Science}{Sep 2016 -- Jun 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Additional}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (Guava, Guice, Spring, JUnit), JavaScript (React, Next, Node), Ruby/Rails (RSpec), Python} \\[4pt]
+     \textbf{Cloud \& DevOps}{: AWS (ECS, S3, Lambda, SQS, SNS, IAM, Route 53, CloudWatch, CloudFormation, and more), Infrastructure-as-Code, CI/CD, Monitoring and Alerting} \\[4pt]
+     \textbf{Development}{: Microservice Architecture, Unit and Integration Testing, A/B Testing, Scrum, Version Control (Git)} \\[4pt]
+     \textbf{Awards}{: 2024 IPAT on the Back Recipient (Amazon) -- Recognized for driving platform adoption across the organization.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
