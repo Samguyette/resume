@@ -1,0 +1,33 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: sam-guyette.tex
+
+      - name: Convert PDF to PNG
+        run: |
+          sudo apt-get install -y poppler-utils
+          pdftoppm -r 250 -png sam-guyette.pdf resume
+          mv resume-1.png resume.png
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resume.png sam-guyette.pdf
+          git diff --staged --quiet || git commit -m "Update resume [skip ci]"
+          git push
